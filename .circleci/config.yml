@@ -10,4 +10,9 @@ workflows:
   welcome:
     # Run the welcome/run job in its own container
     jobs:
-      - welcome/run
+      - welcome/run:
+          filters:
+            branches:
+              only: master
+            tags:
+              only: /^release-.*/
