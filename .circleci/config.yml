@@ -14,5 +14,5 @@ workflows:
           filters:
             branches:
               only: master
-            # tags:
-            #   only: /^release-.*/
+            tags:
+              only: /^release-.*/
